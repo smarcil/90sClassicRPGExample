@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using Com._90sClassicRPGExample.Data;
+using Com._90sClassicRPGExample.Behaviours.PlayerBehaviourModuls;
 
 namespace Com._90sClassicRPGExample.Behaviours.Gmanagers{
 	public class MainGmanager : MonoBehaviour {
@@ -27,6 +28,7 @@ namespace Com._90sClassicRPGExample.Behaviours.Gmanagers{
 		#region ### Fields ###
 
 		PlayerData _playerData;
+		PlayerSceneMemoryModul _playerMemory;
 
 		#endregion
 
@@ -39,6 +41,11 @@ namespace Com._90sClassicRPGExample.Behaviours.Gmanagers{
 				}
 				return getInstance()._playerData;
 			}
+		}
+
+		public static PlayerSceneMemoryModul playerMemory{
+			set{ getInstance()._playerMemory = value; }
+			get{ return getInstance()._playerMemory; }
 		}
 
 		#endregion

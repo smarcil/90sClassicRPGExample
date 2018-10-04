@@ -14,7 +14,6 @@ namespace Com._90sClassicRPGExample.Behaviours.Gmanagers{
 		
 		// Use this for initialization
 		void Start () {
-			player.stats = MainGmanager.playerData.playerStats;
 		}
 		
 		// Update is called once per frame
